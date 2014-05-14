@@ -12,7 +12,7 @@ if(file_exists(BASEPATH .'config.php')){
 }
 
 // Get our page (for pagination)
-$page = isset($_GET['page']) && $_GET['page'] ? $_GET['page'] : 1;
+$page = isset($_GET['page']) && $_GET['page'] ? filter_var($_GET['page'], FILTER_SANITIZE_NUMBER_INT) : 1;
 
 // Setup our file cache
 if(file_exists(BASEPATH .'cache/')){
