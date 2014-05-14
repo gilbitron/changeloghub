@@ -1,10 +1,12 @@
 Changeloghub
 ============
 
+Generate HTML changelogs from your GitHub commits.
+
 Requirements
 ------------
 
-Your server needs to be running PHP (any reasonable version) and probably Apache or Nginx.
+Your server needs to be running PHP (v5.x) and probably Apache or Nginx.
 Any LAMP stack will do.
 
 Install
