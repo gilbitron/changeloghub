@@ -19,6 +19,11 @@ Install
 Thats it. When you visit your site you should now see your automatically generated changelog page.
 Feel free to customize the HTML structure in `index.php` or the styles via `assets/css/style.css`.
 
+Demo
+----
+
+See http://dev7studios.com/changelog/example
+
 Credits
 -------
 
