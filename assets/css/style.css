@@ -1,0 +1,217 @@
+/*=================================*/
+/* Reset Styles
+/*=================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+/* make buttons play nice in IE:
+    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+/* Sharper Thumbnails */
+img { -ms-interpolation-mode: bicubic; }
+
+
+/*=================================*/
+/* Base Styles
+/*=================================*/
+
+body {
+	font: 12px/1.6em Monaco, Consolas, 'Lucida Console', monospace;
+	color: #DAE4F2;
+	background: #292E33;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.7);
+	padding: 60px;
+}
+
+a, a:visited {
+	color: #80B2FF;
+	text-decoration: none;
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+a:hover, a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 14px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.2em;
+	margin-bottom: 0.6em;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 1.9em;
+}
+h3 {
+	font-size: 1.7em;
+	margin-top: 2em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.3em;
+}
+h6 {
+	font-size: 1.2em;
+}
+p {
+	margin-bottom: 1em;
+}
+
+ol, ul {
+	padding-left: 30px;
+	margin-bottom: 1em;
+}
+
+b, strong {
+	font-weight: bold;
+}
+i, em {
+	font-style: italic;
+}
+u {
+	text-decoration: underline;
+}
+abbr, acronym {
+	cursor: help;
+	border-bottom: .1em dotted;
+}
+td, td img { vertical-align: top; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+code {
+	font-family: Courier, "Courier New", Monaco, Tahoma;
+	background: #eee;
+	color: #333;
+	padding: 0px 2px;
+}
+pre {
+	background: #eee;
+	padding: 20px;
+	margin-bottom: 1em;
+	overflow: auto;
+}
+blockquote {
+	font-style: italic;
+	margin: 0 0 1em 15px;
+	padding-left: 10px;
+	border-left: 5px solid #ddd;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+
+/*=================================*/
+/* Main Styles
+/*=================================*/
+
+.title {
+	font-size: 28px;
+	line-height: 1.3em;
+	color: #fff;
+	margin: 0 0 30px 0;
+	-webkit-font-smoothing: antialiased;
+}
+.title a { color: #ccc; }
+.title a .repo {
+	color: #80B2FF;
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+.title a:hover,
+.title a:hover .repo {
+	color: #fff;
+	text-decoration: none;
+}
+
+#changelog {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#changelog .date {
+	color: #fff;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+}
+#changelog .commits {
+	list-style: disc;
+	padding: 0;
+	margin: 7px 0 30px 20px;
+}
+#changelog .commits .message { color: #DAE4F2; }
+#changelog .commits .message:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.pagination {
+	color: #bbb;
+	text-align: center;
+	margin: 60px 0 30px 0;
+}
+.pagination .current { margin: 0 10px; }
+
+.footer {
+	opacity: 0.5;
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+.footer:hover { opacity: 1; }

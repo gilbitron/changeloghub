@@ -1,0 +1,22 @@
+{
+	"name": "gilbitron/changeloghub",
+	"description": "Generate HTML changelogs from your GitHub commits",
+	"version": "0.1.0",
+	"keywords": [
+		"github",
+		"changelog",
+		"changeloghub"
+    ],
+    "license": "MIT",
+    "authors": [
+		{
+			"name": "Gilbert Pellegrom",
+			"email": "gilbert@pellegrom.me",
+			"homepage": "http://gilbert.pellegrom.me",
+			"role": "Developer"
+		}
+    ],
+	"require": {
+		"gilbitron/php-simplecache": "1.3.x"
+	}
+}
